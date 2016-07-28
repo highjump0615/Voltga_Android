@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/place_item_bg">
+
+    <FrameLayout
+        android:id="@+id/layout_photo"
+        android:layout_width="@dimen/place_item_img_size"
+        android:layout_height="@dimen/place_item_img_size"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/img_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_default_user" />
+
+        <ImageView
+            android:id="@+id/img_online"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_online" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/notify_item_img_margin"
+        android:layout_marginRight="@dimen/notify_item_img_margin"
+        android:layout_toRightOf="@+id/layout_photo"
+        android:text="Sample Notification"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/notify_item_font_size" />
+
+</RelativeLayout>

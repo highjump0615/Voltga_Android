@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg">
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/signup_title_bar_height"
+        android:background="@color/tint_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/signup_title"
+            android:textColor="@color/tint_color"
+            android:textSize="@dimen/signup_title_text_size"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/title_logo" />
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/title_back_icon" />
+
+        <Button
+            android:id="@+id/but_action"
+            android:layout_width="@dimen/signup_title_button_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/user_title_action"
+            android:textColor="@color/transparent_button_color"
+            android:textSize="@dimen/signup_title_button_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_banner"
+        android:layout_below="@+id/layout_title"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.diyin.Voltga.widget.SquareImageView
+                android:id="@+id/img_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_default_user" />
+
+            <TextView
+                android:id="@+id/text_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_background"
+                android:layout_margin="@dimen/user_info_profile_margin"
+                android:lineSpacingMultiplier="1.3"
+                android:text="Borys\n25, 6'2, 180lbs, \nWhite, muscular, \nsafe only, negative"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/user_info_profile_text_size" />
+
+            <TextView
+                android:id="@+id/text_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_private_photo"
+                android:layout_margin="@dimen/user_info_profile_margin"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingBottom="@dimen/user_info_profile_margin"
+                android:text="Intro"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/user_info_intro_text_size" />
+
+            <LinearLayout
+                android:id="@+id/layout_private_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_background"
+                android:orientation="horizontal">
+
+                <com.diyin.Voltga.widget.PeopleItemLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_publicphoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/img_default_user" />
+
+                </com.diyin.Voltga.widget.PeopleItemLayout>
+
+                <com.diyin.Voltga.widget.PeopleItemLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_privatephoto1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/img_default_user" />
+
+                </com.diyin.Voltga.widget.PeopleItemLayout>
+
+                <com.diyin.Voltga.widget.PeopleItemLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_privatephoto2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/img_default_user" />
+
+                </com.diyin.Voltga.widget.PeopleItemLayout>
+
+                <com.diyin.Voltga.widget.PeopleItemLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_privatephoto3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/img_default_user" />
+
+                </com.diyin.Voltga.widget.PeopleItemLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_action"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_action_height"
+        android:layout_below="@+id/layout_title"
+        android:background="@color/action_layout_bg_color"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_mention"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:paddingBottom="@dimen/user_action_bottomPadding"
+                android:paddingTop="@dimen/user_action_topPadding"
+                android:src="@drawable/button_mention_bg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/user_action_topMargin"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:text="@string/user_action_mention"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/user_action_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_like"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:paddingBottom="@dimen/user_action_bottomPadding"
+                android:paddingTop="@dimen/user_action_topPadding"
+                android:src="@drawable/button_like_bg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/user_action_topMargin"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:text="@string/user_action_like"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/user_action_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_unlock"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:paddingBottom="@dimen/user_action_bottomPadding"
+                android:paddingTop="@dimen/user_action_topPadding"
+                android:src="@drawable/button_unlock_bg" />
+
+            <TextView
+                android:id="@+id/text_unlock"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/user_action_topMargin"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:text="@string/user_action_unlock"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/user_action_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_block"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:paddingBottom="@dimen/user_action_bottomPadding"
+                android:paddingTop="@dimen/user_action_topPadding"
+                android:src="@drawable/button_block_bg" />
+
+            <TextView
+                android:id="@+id/text_block"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/user_action_topMargin"
+                android:layout_weight="1"
+                android:gravity="center|bottom"
+                android:text="@string/user_action_block"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/user_action_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/profile_banner_ad_unit_id" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

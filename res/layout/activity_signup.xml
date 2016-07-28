@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <RelativeLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/signup_title_bar_height"
+        android:background="@color/tint_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/signup_title"
+            android:textColor="@color/tint_color"
+            android:textSize="@dimen/signup_title_text_size"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/title_logo" />
+
+        <Button
+            android:id="@+id/but_signin"
+            android:layout_width="@dimen/signup_title_button_width"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/signup_title_signin"
+            android:textColor="@color/transparent_button_color"
+            android:textSize="@dimen/signup_title_button_size" />
+
+        <Button
+            android:id="@+id/but_done"
+            android:layout_width="@dimen/signup_title_button_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/signup_title_done"
+            android:textColor="@color/transparent_button_color"
+            android:textSize="@dimen/signup_title_button_size" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/signup_item_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/field_background"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/signup_item_padding"
+                android:paddingRight="@dimen/signup_item_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/signup_email"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/signup_item_text_size" />
+
+                <EditText
+                    android:id="@+id/edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/signup_item_padding"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/signup_email_hint"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/signup_item_text"
+                    android:textColorHint="@color/signup_item_text_hint"
+                    android:textSize="@dimen/signup_item_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/signup_item_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/field_background"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/signup_item_padding"
+                android:paddingRight="@dimen/signup_item_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/signup_password"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/signup_item_text_size" />
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/signup_item_padding"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/signup_password_hint"
+                    android:inputType="textPassword"
+                    android:textColor="@color/signup_item_text"
+                    android:textColorHint="@color/signup_item_text_hint"
+                    android:textSize="@dimen/signup_item_text_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/signup_item_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/field_background"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/signup_item_padding"
+                android:paddingRight="@dimen/signup_item_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/signup_cpassword"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/signup_item_text_size" />
+
+                <EditText
+                    android:id="@+id/edit_cpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/signup_item_padding"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/signup_cpassword_hint"
+                    android:inputType="textPassword"
+                    android:textColor="@color/signup_item_text"
+                    android:textColorHint="@color/signup_item_text_hint"
+                    android:textSize="@dimen/signup_item_text_size" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/field_background"
+                android:paddingLeft="@dimen/signup_item_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/signup_profile_pic"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/signup_item_text_size" />
+
+                <ImageView
+                    android:id="@+id/but_photo"
+                    android:layout_width="@dimen/signup_photo_size"
+                    android:layout_height="@dimen/signup_photo_size"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/img_default_user" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/signup_item_height"
+                android:layout_marginTop="1dp"
+                android:background="@color/field_background"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/signup_item_padding"
+                android:paddingRight="@dimen/signup_item_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/signup_username"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/signup_item_text_size" />
+
+                <EditText
+                    android:id="@+id/edit_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/signup_item_padding"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/signup_username_hint"
+                    android:inputType="textPersonName|textNoSuggestions"
+                    android:textColor="@color/signup_item_text"
+                    android:textColorHint="@color/signup_item_text_hint"
+                    android:textSize="@dimen/signup_item_text_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

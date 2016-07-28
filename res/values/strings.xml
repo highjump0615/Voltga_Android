@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Voltga</string>
+
+    <!-- AdMob banner id -->
+    <string name="profile_banner_ad_unit_id">ca-app-pub-8287457467886602/3184293178</string>
+    <string name="notification_banner_ad_unit_id">ca-app-pub-8287457467886602/1707559971</string>
+    <string name="place_banner_ad_unit_id">ca-app-pub-8287457467886602/1759762378</string>
+
+    <!-- splash activity -->
+    <string name="splash_title">VOLTGA</string>
+    <string name="splash_subtitle">Almost as good as Vodka</string>
+
+    <!-- signup activity -->
+    <string name="signup_title">SIGN UP</string>
+    <string name="signup_title_signin">Log In</string>
+    <string name="signup_title_done">Done</string>
+
+    <string name="signup_username">*Username</string>
+    <string name="signup_username_hint">cannot be changed after</string>
+
+    <string name="signup_password">*Password</string>
+    <string name="signup_password_hint">******</string>
+
+    <string name="signup_cpassword">*Confirm password</string>
+    <string name="signup_cpassword_hint">******</string>
+
+    <string name="signup_email">*Email</string>
+    <string name="signup_email_hint">user@email.com</string>
+
+    <string name="signup_profile_pic">*Profile Picture</string>
+
+    <string name="photo_album">Photo Album</string>
+    <string name="camera">Camera</string>
+
+    <!-- signin activity -->
+    <string name="signin_title">SIGN IN</string>
+    <string name="signin_title_back">Back</string>
+    <string name="signin_forget_but">Forgot password?</string>
+
+    <!-- forget dialog -->
+    <string name="forget_desc">Please input the email address</string>
+
+    <!-- search panel -->
+    <string name="cancel">Cancel</string>
+
+    <!-- place activity -->
+    <string name="place_title">PLACE</string>
+
+    <!-- current activity -->
+    <string name="current_title">PLACE NAME</string>
+    <string name="current_people">People</string>
+    <string name="current_chat">Chat</string>
+    <string name="current_notify">Notification</string>
+
+    <!-- account activity -->
+    <string name="account_title">ACCOUNT</string>
+    <string name="account_public_picture">Public Profile Picture</string>
+    <string name="account_profile">Profile</string>
+    <string name="account_account">Account</string>
+    <string name="account_private_picture">Private Pictures</string>
+    <string name="account_save">Save</string>
+    <string name="account_curpassword">Current Password</string>
+    <string name="account_newpassword">New Password</string>
+
+    <!-- profile activity -->
+    <string name="profile_title">PROFILE</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_age">Age</string>
+    <string name="profile_height">Height</string>
+    <string name="profile_weight">Weight</string>
+    <string name="profile_ethnicity">Ethnicity</string>
+    <string name="profile_body">Body Type</string>
+    <string name="profile_practice">Practice</string>
+    <string name="profile_status">Status</string>
+    <string name="profile_intro">Intro</string>
+
+    <string-array name="ethnicity_array">
+        <item>White</item>
+        <item>Asian</item>
+        <item>Latino</item>
+        <item>Black</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="body_array">
+        <item>Body Builder</item>
+        <item>Muscular</item>
+        <item>Athletic</item>
+        <item>Average</item>
+        <item>Large</item>
+        <item>Slim</item>
+    </string-array>
+
+    <string-array name="practice_array">
+        <item>Always Safe</item>
+        <item>Mostly</item>
+        <item>Anything Goes</item>
+    </string-array>
+
+    <string-array name="status_array">
+        <item>negative</item>
+        <item>positive</item>
+        <item>don\'t know</item>
+    </string-array>
+
+    <!-- chat fragment -->
+    <string name="chat_send">Send</string>
+
+    <!-- user activity -->
+    <string name="user_title_action">Action</string>
+    <string name="user_action_mention">mention</string>
+    <string name="user_action_unlock">unlock</string>
+    <string name="user_action_like">smile</string>
+    <string name="user_action_block">block</string>
+
+    <string name="search">Search</string>
+
+</resources>

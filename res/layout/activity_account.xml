@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/account_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/account_public_profile_height"
+            android:background="@color/signup_item_background"
+            android:paddingLeft="@dimen/account_item_left_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/account_public_picture"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/signup_item_text_size" />
+
+            <ImageView
+                android:id="@+id/but_photo"
+                android:layout_width="@dimen/signup_photo_size"
+                android:layout_height="@dimen/signup_photo_size"
+                android:layout_alignParentRight="true"
+                android:background="@color/account_background"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_default_user" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/but_profile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signup_item_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/signup_item_background"
+            android:drawableRight="@drawable/forward_icon"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/account_item_left_padding"
+            android:text="@string/account_profile"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/signup_item_text_size" />
+
+        <Button
+            android:id="@+id/but_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/signup_item_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/signup_item_background"
+            android:drawableRight="@drawable/forward_icon"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/account_item_left_padding"
+            android:text="@string/account_account"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/signup_item_text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/signup_item_background"
+            android:gravity="center"
+            android:paddingBottom="@dimen/account_item_top_padding"
+            android:paddingLeft="@dimen/account_item_left_padding"
+            android:paddingTop="@dimen/account_item_top_padding"
+            android:text="@string/account_private_picture"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/signup_item_text_size" />
+
+        <LinearLayout
+            android:id="@+id/layout_private_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.diyin.Voltga.widget.PeopleItemLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/but_private_photo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/account_background"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_default_user" />
+
+            </com.diyin.Voltga.widget.PeopleItemLayout>
+
+            <com.diyin.Voltga.widget.PeopleItemLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/but_private_photo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/account_background"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_default_user" />
+
+            </com.diyin.Voltga.widget.PeopleItemLayout>
+
+            <com.diyin.Voltga.widget.PeopleItemLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/but_private_photo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/account_background"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_default_user" />
+
+            </com.diyin.Voltga.widget.PeopleItemLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

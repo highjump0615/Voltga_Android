@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/place_item_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img_place"
+        android:layout_width="@dimen/place_item_img_size"
+        android:layout_height="@dimen/place_item_img_size"
+        android:layout_centerVertical="true"
+        android:background="@drawable/img_bar_default" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/place_item_img_margin"
+        android:layout_marginRight="@dimen/place_item_img_margin"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/place_name_margin_bottom"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Sample Place"
+            android:textColor="@color/place_name_text_color"
+            android:textSize="@dimen/place_name_font_size" />
+
+        <TextView
+            android:id="@+id/text_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Sample Place"
+            android:textColor="@color/place_address_text_color"
+            android:textSize="@dimen/place_address_font_size" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_thumb"
+        android:layout_width="@dimen/place_item_img_size"
+        android:layout_height="@dimen/place_item_img_size"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_default_user" />
+
+</LinearLayout>

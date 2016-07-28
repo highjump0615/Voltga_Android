@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- splash activity -->
+    <color name="tint_color">#b5d434</color>
+    <color name="text_color">#252525</color>
+
+    <color name="splash_background_shade">#66771d</color>
+    <color name="splash_title">#434539</color>
+
+    <!-- signup activity -->
+    <color name="field_background">#4c252525</color>
+
+    <color name="signup_background">#424539</color>
+    <color name="signup_item_background">#282828</color>
+    <color name="signup_item_text">#969696</color>
+    <color name="signup_item_text_hint">#404040</color>
+
+    <!-- place activity -->
+    <color name="search_text_bg_color">#d5dfaf</color>
+    <color name="default_text_color">#424539</color>
+
+    <color name="place_address_text_color">#777777</color>
+    <color name="list_item_bg_color">@color/field_background</color>
+
+    <!-- account activity -->
+    <color name="account_background">#1c1c1c</color>
+
+    <!-- chat fragment -->
+    <color name="chat_background">#33362b</color>
+    <color name="chat_input_background">#1d1d18</color>
+
+    <color name="chat_send_time_color">#555555</color>
+
+    <!-- notification fragment -->
+    <color name="notification_exist_item_bg">#4cb5d434</color>
+    <color name="badge_color">#f43530</color>
+
+    <!-- tab bar -->
+    <color name="tab_bar_background">#272727</color>
+    <color name="tab_background">#778c1d</color>
+
+    <!-- user activity -->
+    <color name="user_action_background">#75776f</color>
+    <color name="profile_item_text_color">#515151</color>
+
+    <color name="action_layout_bg_color">#33b5d434</color>
+
+</resources>

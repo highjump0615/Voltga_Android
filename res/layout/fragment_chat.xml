@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_input"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:smoothScrollbar="true"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@android:color/white"
+        ptr:ptrMode="pullFromStart" />
+
+    <RelativeLayout
+        android:id="@+id/layout_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tint_color">
+
+        <ImageView
+            android:id="@+id/img_Photo"
+            android:layout_width="@dimen/chat_input_photo_width"
+            android:layout_height="@dimen/chat_input_photo_height"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/chat_input_photo_padding"
+            android:src="@drawable/img_send_photo" />
+
+        <Button
+            android:id="@+id/but_send"
+            android:layout_width="@dimen/chat_send_button_width"
+            android:layout_height="@dimen/chat_send_button_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:enabled="false"
+            android:text="@string/chat_send"
+            android:textSize="18sp"
+            android:textColor="@color/default_button_color" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/chat_input_text_margin"
+            android:layout_marginTop="@dimen/chat_input_text_margin"
+            android:layout_toLeftOf="@+id/but_send"
+            android:layout_toRightOf="@+id/img_Photo"
+            android:background="@drawable/chat_edit_rounded"
+            android:maxLength="140"
+            android:minHeight="30dp"
+            android:padding="@dimen/chat_input_text_padding"
+            android:textCursorDrawable="@drawable/black_cursor"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

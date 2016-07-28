@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/chat_mine_top_margin"
+    android:paddingTop="@dimen/chat_mine_top_margin">
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="@dimen/chat_user_photo_size"
+        android:layout_height="@dimen/chat_user_photo_size"
+        android:layout_alignBottom="@+id/layout_chat_item"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/chat_mine_narrow_margin"
+        android:scaleType="fitXY"
+        android:background="@drawable/img_default_user" />
+
+    <RelativeLayout
+        android:id="@+id/layout_chat_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/chat_mine_wide_margin"
+        android:layout_toLeftOf="@+id/img_photo"
+        android:background="@drawable/bubble_classic_blue"
+        android:paddingBottom="@dimen/chat_bubble_top_padding"
+        android:paddingLeft="@dimen/chat_bubble_top_padding"
+        android:paddingRight="@dimen/chat_bubble_horizontal_padding"
+        android:paddingTop="@dimen/chat_bubble_top_padding">
+
+        <TextView
+            android:id="@+id/text_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/chat_bubble_text_vertical_padding"
+            android:paddingLeft="@dimen/chat_bubble_text_horizontal_padding"
+            android:paddingRight="@dimen/chat_bubble_text_horizontal_padding"
+            android:paddingTop="@dimen/chat_bubble_text_vertical_padding"
+            android:gravity="center_vertical"
+            android:text="[everybody] This is sample chat. \nDo you like my work? \nWhat do you think? [somebody] Happy National Day~~:)"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/chat_bubble_text_size" />
+
+        <ImageView
+            android:id="@+id/img_chat"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingBottom="@dimen/chat_bubble_image_vertical_padding"
+            android:paddingLeft="@dimen/chat_bubble_image_horizontal_padding"
+            android:paddingRight="@dimen/chat_bubble_image_horizontal_padding"
+            android:paddingTop="@dimen/chat_bubble_image_vertical_padding"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default_user" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_send_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_chat_item"
+        android:layout_marginTop="@dimen/chat_mine_top_margin"
+        android:gravity="center"
+        android:text="08-23-2014      01:01"
+        android:textColor="@color/chat_send_time_color"
+        android:textSize="@dimen/chat_send_time_text_size" />
+
+</RelativeLayout>

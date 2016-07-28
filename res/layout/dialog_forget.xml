@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/forget_padding">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/forget_padding"
+        android:textSize="@dimen/signup_item_text_size"
+        android:text="@string/forget_desc"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/signup_item_text_size"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/signup_item_text"
+        android:textColorHint="@color/signup_item_text_hint"
+        android:hint="@string/signup_email_hint"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>
